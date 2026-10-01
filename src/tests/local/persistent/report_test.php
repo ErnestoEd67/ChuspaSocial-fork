@@ -4,10 +4,38 @@ namespace local_persistent;
 
 use advanced_testcase;
 use core\persistent;
+use stdClass;
 
 /**
- * Pruebas unitarias para la clase report.
- *
+ * Clase concreta de prueba para extender core/persistent.
+ */
+class dummy_persistent extends persistent {
+
+    /** Nombre de la tabla ficticia */
+    const TABLE = 'dummy_persistent';
+
+    /**
+     * Define la estructura de campos requerida por persistent.
+     * 
+     * @return array 
+     */
+    protected static function define_properties(): array {
+        return [
+            'name' => [
+                'type' => PARAM_TEXT,
+                'default' => '',
+            ],
+            'status' => [
+                'type' => PARAM_INT,
+                'default' => 0, 
+            ],
+        ];
+    }
+}
+
+/**
+ * Pruebas unitarias para las clases persistentes.
+ * 
  * @package    local_persistent
  * @category   test
  * @covers     \core\persistent
@@ -22,27 +50,28 @@ class report_test extends advanced_testcase {
     }
 
     /**
-     * Test 1: Creacion valida de la instancia persistent.
+     * Test 1: Creacion valida pasando el objeto de datos en el segundo argumento ($record).
      */
     public function test_creacion_valida(): void {
-        $data = [
-            'name' => 'Reporte de prueba',
-            'status' => 1
-        ];
+        $record = new stdClass();
+        $record->name = 'Reporte de prueba';
+        $record->status = 1;
 
-        $persistent = $this->getMockForAbstractClass(persistent::class, [(object) $data]);
+        // Se pasa 0 como primer argumento ($id) y $record como el segundo argumento ($record)
+        $persistent = new dummy_persistent(0, $record);
 
         $this->assertInstanceOf(persistent::class, $persistent);
         $this->assertEquals('Reporte de prueba', $persistent->get('name'));
     }
 
     /**
-     * Test 2: Verificacion de valores por defecto al instanciar.
+     * Test 2: Verificacion de valores por defecto al instanciar sin registro.
      */
     public function test_valores_por_defecto(): void {
-        $persistent = $this->getMockForAbstractClass(persistent::class);
+        $persistent = new dummy_persistent(0);
 
         $this->assertEquals(0, $persistent->get('id'));
+        $this->assertEquals('', $persistent->get('name'));
     }
 
     /**
@@ -51,7 +80,7 @@ class report_test extends advanced_testcase {
     public function test_campo_invalido_lanza_excepcion(): void {
         $this->expectException(\coding_exception::class);
 
-        $persistent = $this->getMockForAbstractClass(persistent::class);
+        $persistent = new dummy_persistent(0);
         $persistent->get('campo_inexistente_que_no_existe');
     }
 }
