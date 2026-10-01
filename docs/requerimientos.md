@@ -2,6 +2,29 @@
 
 ## Requerimientos Funcionales
 
+### Muro
+
+| ID | Descripción | Prioridad | Estado |
+|---|---|---|---|
+| RF-006 | Eliminar una publicación propia | Alta | Pendiente |
+
+#### Criterios de aceptación
+
+### RF-006
+
+**Criterio 1**
+
+- **Dado** un usuario autenticado que tiene una publicación propia en el muro,
+- **Cuando** selecciona la opción de eliminar su publicación y confirma la acción,
+- **Entonces** el sistema elimina la publicación seleccionada y deja de mostrarla en el muro.
+
+
+**Criterio 2**
+
+- **Dado** un usuario que intenta eliminar una publicación creada por otro usuario,
+- **Cuando** confirma la acción de eliminación,
+- **Entonces** el sistema rechaza la operación y mantiene la publicación sin cambios.
+
 ### Seguidores
 ### Anuncios
 
@@ -105,6 +128,25 @@
 - **Cuando** accede al muro de la materia,
 - **Entonces** ve las publicaciones de actividad correspondientes a las tareas nuevas, con la información de la tarea y su fecha.
 
+### Administración
+
+| ID | Descripción | Prioridad | Estado |
+|---|---|---|---|
+| RF-042 | Configurar los límites del muro: longitud máxima de una publicación, cantidad máxima de imágenes por publicación y número de publicaciones mostradas por página | Baja | Pendiente |
+
+#### Criterios de aceptación
+
+### RF-042
+
+**Criterio 1**
+- **Dado** un administrador autenticado en el panel de Administración,
+- **Cuando** configura la longitud máxima permitida para una publicación,
+- **Entonces** las publicaciones que superen ese límite no pueden guardarse y el sistema muestra un mensaje de error.
+
+**Criterio 2**
+- **Dado** un administrador autenticado en el panel de Administración,
+- **Cuando** configura el número máximo de imágenes por publicación y el número de publicaciones mostradas por página,
+- **Entonces** el muro respeta esos límites al crear publicaciones y al paginar el feed de cada materia.
 ## Requerimientos No Funcionales
 
 | ID | Descripción | Categoría | Estado |
