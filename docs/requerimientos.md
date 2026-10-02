@@ -259,6 +259,7 @@
 | ID | Descripción | Prioridad | Estado |
 |---|---|---|---|
 | RF-035 | Buscar libros por título o autor | Media | Pendiente |
+| RF-039 | Editar o eliminar un anuncio propio | Media | Pendiente |
 
 #### Criterios de aceptación
 
@@ -273,6 +274,18 @@
 - **Dado** que el usuario se encuentra en el buscador del Marketplace,
 - **Cuando** ingresa el nombre de un autor en el campo de texto,
 - **Entonces** el sistema debe mostrar una lista con todos los libros registrados bajo ese autor.
+### RF-039
+
+**Criterio 1**
+- **Dado** un vendedor autenticado que tiene un anuncio propio publicado en el Marketplace,
+- **Cuando** edita los datos del anuncio y guarda los cambios,
+- **Entonces** el sistema actualiza el anuncio manteniendo al mismo vendedor como propietario.
+
+**Criterio 2**
+- **Dado** un vendedor autenticado que tiene un anuncio propio publicado en el Marketplace,
+- **Cuando** solicita eliminarlo y confirma la acción,
+- **Entonces** el sistema elimina el anuncio y deja de mostrarlo en el Marketplace.
+
 ### Notificaciones
 
 | ID | Descripción | Prioridad | Estado |
