@@ -4,13 +4,29 @@
 
 ### Seguidores
 ### Anuncios
+### Reacciones
 
 | ID | Descripción | Prioridad | Estado |
 |---|---|---|---|
 | RF-001 | | Alta | Pendiente |
-
+| RF-014 | Ver el numero de reacciones | Medio | Pendiente |
 | RF-020 | Ver la lista de seguidores y seguidos | Baja | Pendiente |
 
+#### Criterios de aceptación
+
+### RF-014
+
+**Criterio 1**
+
+- **Dado** un usuario que visualiza una publicación,
+- **Cuando** la publicación tiene una o más reacciones,
+- **Entonces** se muestra el número total de reacciones de la publicación.
+
+**Criterio 2**
+
+- **Dado** una publicación que no tiene reacciones,
+- **Cuando** el usuario visualiza la publicación,
+- **Entonces** se muestra que el total de reacciones es cero.
 #### Criterios de aceptación
 
 ### RF-020
