@@ -238,9 +238,22 @@
 
 | ID | Descripción | Prioridad | Estado |
 |---|---|---|---|
+| RF-041 | Activar o desactivar el Marketplace | Media | Pendiente |
 | RF-042 | Configurar los límites del muro: longitud máxima de una publicación, cantidad máxima de imágenes por publicación y número de publicaciones mostradas por página | Baja | Pendiente |
 
 #### Criterios de aceptación
+
+### RF-041
+
+**Criterio 1**
+- **Dado** un administrador autenticado en la configuración del sitio,
+- **Cuando** activa el Marketplace,
+- **Entonces** el módulo queda disponible y aparece en la navegación para los usuarios.
+
+**Criterio 2**
+- **Dado** un administrador autenticado en la configuración del sitio,
+- **Cuando** desactiva el Marketplace,
+- **Entonces** el módulo deja de aparecer en la navegación para los usuarios.
 
 ### RF-042
 
