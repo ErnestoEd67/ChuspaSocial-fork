@@ -21,6 +21,12 @@
 |---|---|---|---|
 | RF-016 | Filtrar el muro por tag | Alta | Pendiente |
 
+### Módulo Seguidores
+
+| ID | Descripción | Prioridad | Estado |
+|---|---|---|---|
+| RF-019 | Ver el perfil social de un usuario | Media | Pendiente |
+
 #### Criterios de aceptación
 
 ### RF-006
@@ -119,6 +125,7 @@
 | RF-001 | | Alta | Pendiente |
 
 | RF-020 | Ver la lista de seguidores y seguidos | Baja | Pendiente |
+| RF-019 | Ver el perfil social de un usuario | Media | Pendiente |
 
 #### Criterios de aceptación
 
@@ -149,6 +156,19 @@
 - **Cuando** recarga su feed personalizado,
 - **Entonces** las nuevas publicaciones de esos usuarios y tags aparecen en el feed.
 | RF-022 | Publicar un anuncio oficial en una materia | Alta | Pendiente |
+
+### RF-019 - Ver el perfil social de un usuario
+
+#### Criterio 1
+* **Dado** que el usuario se encuentra navegando en la plataforma,
+* **Cuando** haga clic sobre el nombre o foto de perfil de otro usuario,
+* **Entonces** el sistema deberá redirigirlo a su perfil social, mostrando sus publicaciones visibles, su lista de seguidores y sus seguidos.
+
+#### Criterio 2
+* **Dado** que el usuario está visitando el perfil de otra persona,
+* **Cuando** intente interactuar con la información pública del perfil,
+* **Entonces** el sistema deberá permitirle ver el contador actualizado de seguidores y seguidos en tiempo real.
+
 
 #### Criterios de aceptación
 
