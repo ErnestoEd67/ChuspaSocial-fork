@@ -128,6 +128,26 @@
 - **Cuando** accede al muro de la materia,
 - **Entonces** ve las publicaciones de actividad correspondientes a las tareas nuevas, con la información de la tarea y su fecha.
 
+### Marketplace
+
+| ID | Descripción | Prioridad | Estado |
+|---|---|---|---|
+| RF-036 | Contactar al vendedor por la mensajería de Moodle | Alta | Pendiente |
+
+#### Criterios de aceptación
+
+### RF-036
+
+*Criterio 1*
+- *Dado* un usuario autenticado que visualiza un anuncio publicado por otro usuario en el Marketplace,
+- *Cuando* presiona el botón "Contactar",
+- *Entonces* el sistema abre una conversación con el vendedor mediante la mensajería de Moodle.
+
+*Criterio 2*
+- *Dado* un usuario que ya inició una conversación con el vendedor desde el botón "Contactar",
+- *Cuando* envía un mensaje dentro de esa conversación,
+- *Entonces* el vendedor recibe el mensaje en su bandeja de mensajería de Moodle.
+
 ### Administración
 
 | ID | Descripción | Prioridad | Estado |
