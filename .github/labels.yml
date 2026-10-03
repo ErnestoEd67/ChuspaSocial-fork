@@ -70,3 +70,33 @@
 - name: "modulo:documentacion"
   color: "FEF2C0"
   description: "Módulo Documentación"
+# Etiquetas de fase del proyecto ChuspaSocial
+# Se aplican a issues y pull requests para ubicarlos en el plan de trabajo.
+
+- name: fase-0
+  color: "ededed"
+  description: Preparación del entorno, repositorio y configuración inicial
+
+- name: fase-1
+  color: "c5def5"
+  description: Análisis de requerimientos y documentación funcional
+
+- name: fase-2
+  color: "bfdadc"
+  description: Diseño de la arquitectura y del modelo de datos
+
+- name: fase-3
+  color: "c2e0c6"
+  description: Implementación del plugin y sus módulos
+
+- name: fase-4
+  color: "fef2c0"
+  description: Pruebas unitarias, de integración y de aceptación
+
+- name: fase-5
+  color: "f9d0c4"
+  description: Auditoría de seguridad y control de calidad del código
+
+- name: fase-6
+  color: "d4c5f9"
+  description: Despliegue, publicación y entrega final
