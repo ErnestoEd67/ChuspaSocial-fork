@@ -299,6 +299,7 @@
 |---|---|---|---|
 | RNF-001 | El plugin debe instalarse y funcionar sin errores en Moodle 4.5 LTS (rama MOODLE_405_STABLE). Verificación: ejecutar la suite PHPUnit y moodle-plugin-ci sobre Moodle 4.5 en el CI, que debe pasar sin fallos. | Compatibilidad | Pendiente |
 | RNF-002 | El plugin debe instalarse y ejecutarse sin errores en PHP 8.1, 8.2 y 8.3. Verificación: ejecutar la suite PHPUnit y moodle-plugin-ci sobre las tres versiones de PHP en el CI, que debe pasar sin fallos. | Compatibilidad | Pendiente |
+| RNF-006 | El plugin debe implementar la Privacy API de Moodle 4.5 LTS para gestionar los datos personales de los usuarios, declarando los metadatos, exportando y eliminando datos conforme al RGPD. Verificación: ejecutar la validación de la Privacy API en Moodle 4.5 y aprobar los tests `privacy` de moodle-plugin-ci. | Privacidad | Pendiente |
 
 
 ## Requerimientos de Sistema
