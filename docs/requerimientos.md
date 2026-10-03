@@ -772,6 +772,7 @@
 | RNF-002 | El plugin debe instalarse y ejecutarse sin errores en PHP 8.1, 8.2 y 8.3. Verificación: ejecutar la suite PHPUnit y moodle-plugin-ci sobre las tres versiones de PHP en el CI, que debe pasar sin fallos. | Compatibilidad | Pendiente |
 | RNF-004 | El muro debe cargar y mostrar 50 publicaciones en menos de 2 segundos. Verificación: medir el tiempo de carga en una prueba con 50 publicaciones y comprobar que sea menor a 2 segundos. | Rendimiento | Pendiente |
 | RNF-003 | El plugin debe funcionar sin errores con MariaDB, MySQL y PostgreSQL compatibles con Moodle 4.5 LTS. Verificación: ejecutar la suite PHPUnit y moodle-plugin-ci usando cada motor de base de datos y comprobar que todas las pruebas finalicen sin fallos. | Compatibilidad | Pendiente |
+| RNF-012 | Las clases del plugin en `classes/` deben alcanzar al menos 70 % de cobertura de líneas con PHPUnit. Verificación: ejecutar PHPUnit con reporte de cobertura y comprobar que la cobertura de `classes/` sea igual o superior al 70 %. | Mantenibilidad | Pendiente |
 
 
 ## Requerimientos de Sistema
