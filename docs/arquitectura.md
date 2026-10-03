@@ -1,6 +1,7 @@
 # Arquitectura del Sistema
 
 ## Visión general
+`local_chuspasocial` es un plugin local para Moodle que extiende la plataforma con funcionalidades sociales mediante páginas propias como `view.php`, servicios internos en `classes/local/` para la lógica de negocio y funciones externas en `classes/external/` que exponen endpoints seguros para la interacción asíncrona vía AJAX.
 El plugin `local_chuspasocial` para Moodle 4.5 implementa una arquitectura modular por capas enfocada en la mantenibilidad, escalabilidad y la integración nativa con el core de Moodle.
 
 ## Descripciones de capas y componentes
