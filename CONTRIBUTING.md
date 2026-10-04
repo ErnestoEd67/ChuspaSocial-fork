@@ -112,4 +112,3 @@ chore: configurar phpcs con el estándar de Moodle
 2. Comenta en el issue que quieres trabajarlo
 3. Espera confirmación antes de empezar
 4. Sigue los pasos de este documento
-
