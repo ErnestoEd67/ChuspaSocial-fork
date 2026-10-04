@@ -717,6 +717,7 @@
 | ID | Descripción | Prioridad | Estado |
 |---|---|---|---|
 | RF-035 | Buscar libros por título o autor | Media | Pendiente |
+| RF-036 | Contactar al vendedor por la mensajería de Moodle | Alta | Pendiente |
 | RF-039 | Editar o eliminar un anuncio propio | Media | Pendiente |
 
 #### Criterios de aceptación
@@ -732,6 +733,19 @@
 - **Dado** que el usuario se encuentra en el buscador del Marketplace,
 - **Cuando** ingresa el nombre de un autor en el campo de texto,
 - **Entonces** el sistema debe mostrar una lista con todos los libros registrados bajo ese autor.
+
+### RF-036
+
+*Criterio 1*
+- *Dado* un usuario autenticado que visualiza un anuncio publicado por otro usuario en el Marketplace,
+- *Cuando* presiona el botón "Contactar",
+- *Entonces* el sistema abre una conversación con el vendedor mediante la mensajería de Moodle.
+
+*Criterio 2*
+- *Dado* un usuario que ya inició una conversación con el vendedor desde el botón "Contactar",
+- *Cuando* envía un mensaje dentro de esa conversación,
+- *Entonces* el vendedor recibe el mensaje en su bandeja de mensajería de Moodle.
+
 ### RF-039
 
 **Criterio 1**
