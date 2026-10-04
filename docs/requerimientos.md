@@ -258,10 +258,22 @@
 
 | ID | Descripción | Prioridad | Estado |
 |---|---|---|---|
+| RF-033 | Vincular un libro a una o más materias | Alta | Pendiente |
 | RF-035 | Buscar libros por título o autor | Media | Pendiente |
 
 #### Criterios de aceptación
 
+### RF-033
+
+*Criterio 1*
+- *Dado* un usuario autenticado que está publicando un libro en el Marketplace,
+- *Cuando* selecciona una o más materias existentes para vincularlas al libro,
+- *Entonces* el sistema guarda el libro asociado correctamente a esas materias.
+
+*Criterio 2*
+- *Dado* un usuario que intenta vincular un libro a una materia que no existe en el sistema,
+- *Cuando* confirma la publicación,
+- *Entonces* el sistema rechaza la vinculación y muestra un mensaje indicando que solo puede seleccionar materias existentes.
 ### RF-035
 
 **Criterio 1**
