@@ -551,6 +551,27 @@
 - **Entonces** el sistema actualiza el estado de su reacción sin crear registros duplicados.
 
 ### Seguidores
+
+| ID | Descripción | Prioridad | Estado |
+|---|---|---|---|
+| RF-018 | Seguir a un usuario | Media | Pendiente |
+
+#### Criterios de aceptación
+
+### RF-018
+
+**Criterio 1**
+
+- **Dado** un usuario autenticado que visita el perfil social de otro usuario,
+- **Cuando** presiona el botón "Seguir",
+- **Entonces** el sistema registra que el usuario está siguiendo a ese perfil.
+
+**Criterio 2**
+
+- **Dado** un usuario que ya sigue a otro usuario,
+- **Cuando** consulta el perfil social de ese usuario,
+- **Entonces** el sistema muestra que ya lo está siguiendo y no permite crear un seguimiento duplicado.
+
 ### Anuncios
 
 ### RF-016 - Filtrar el muro por tag
