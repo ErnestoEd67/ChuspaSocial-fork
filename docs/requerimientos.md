@@ -731,6 +731,7 @@
 | RF-034 | Ver los libros de mis materias | Alta | Pendiente |
 | RF-035 | Buscar libros por título o autor | Media | Pendiente |
 | RF-036 | Contactar al vendedor por la mensajería de Moodle | Alta | Pendiente |
+| RF-038 | Marcar un libro como vendido | Media | Pendiente |
 | RF-039 | Editar o eliminar un anuncio propio | Media | Pendiente |
 
 #### Criterios de aceptación
@@ -769,6 +770,20 @@
 - *Dado* un usuario que ya inició una conversación con el vendedor desde el botón "Contactar",
 - *Cuando* envía un mensaje dentro de esa conversación,
 - *Entonces* el vendedor recibe el mensaje en su bandeja de mensajería de Moodle.
+
+### RF-038
+
+**Criterio 1**
+
+- **Dado** un vendedor autenticado que tiene un anuncio propio publicado en el Marketplace,
+- **Cuando** marca el libro como vendido,
+- **Entonces** el sistema actualiza el estado del anuncio y deja de mostrarlo entre los libros disponibles.
+
+**Criterio 2**
+
+- **Dado** un libro que fue marcado como vendido,
+- **Cuando** un usuario consulta los libros disponibles en el Marketplace,
+- **Entonces** el libro vendido no aparece entre los resultados disponibles.
 
 ### RF-039
 
