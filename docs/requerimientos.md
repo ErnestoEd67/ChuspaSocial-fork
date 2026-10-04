@@ -716,11 +716,23 @@
 
 | ID | Descripción | Prioridad | Estado |
 |---|---|---|---|
+| RF-034 | Ver los libros de mis materias | Alta | Pendiente |
 | RF-035 | Buscar libros por título o autor | Media | Pendiente |
 | RF-039 | Editar o eliminar un anuncio propio | Media | Pendiente |
 
 #### Criterios de aceptación
 
+### RF-034
+
+*Criterio 1*
+- *Dado* un usuario autenticado que está inscrito en una o más materias,
+- *Cuando* accede a la sección de Marketplace,
+- *Entonces* el sistema muestra únicamente los anuncios de libros vinculados a las materias en las que está inscrito.
+
+*Criterio 2*
+- *Dado* un usuario que no está inscrito en ninguna materia con libros publicados en el Marketplace,
+- *Cuando* accede a esa sección,
+- *Entonces* el sistema muestra un mensaje indicando que no hay libros disponibles para sus materias.
 ### RF-035
 
 **Criterio 1**
