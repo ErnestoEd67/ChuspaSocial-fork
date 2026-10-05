@@ -104,6 +104,15 @@ chore: configurar phpcs con el estándar de Moodle
 | `test/*` | Pruebas |
 | `chore/*` | Configuración |
 
+## Convenciones de nombres de Moodle
+
+Para mantener el código consistente con Moodle, usa estas convenciones:
+
+- **Frankenstyle:** el nombre del componente es `local_chuspasocial`. Úsalo como prefijo cuando Moodle requiera identificar el plugin.
+- **Tablas de base de datos:** sus nombres deben tener como máximo 28 caracteres y mantenerse relacionados con el componente.
+- **Namespaces:** las clases del plugin deben usar el namespace `local_chuspasocial\...` y ubicarse dentro de `classes/` según su responsabilidad.
+- **Claves de strings:** usa identificadores descriptivos en minúsculas y sin espacios, definidos en los archivos de idioma del componente.
+
 ---
 
 ## ¿No sabes por dónde empezar?
