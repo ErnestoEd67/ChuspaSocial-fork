@@ -834,4 +834,4 @@
 
 | ID | Descripción |
 |---|---|
-| RS-001 | |
+| RS-001 | El cron de Moodle debe estar activo y ejecutarse periódicamente para procesar las notificaciones y tareas programadas de ChuspaSocial. Si no se cumple, estas funciones pueden retrasarse o no ejecutarse. |
