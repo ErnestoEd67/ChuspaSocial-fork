@@ -448,7 +448,7 @@
 |---|---|---|---|
 | RNF-001 | El plugin debe instalarse y funcionar sin errores en Moodle 4.5 LTS (rama MOODLE_405_STABLE). Verificación: ejecutar la suite PHPUnit y moodle-plugin-ci sobre Moodle 4.5 en el CI, que debe pasar sin fallos. | Compatibilidad | Pendiente |
 | RNF-002 | El plugin debe instalarse y ejecutarse sin errores en PHP 8.1, 8.2 y 8.3. Verificación: ejecutar la suite PHPUnit y moodle-plugin-ci sobre las tres versiones de PHP en el CI, que debe pasar sin fallos. | Compatibilidad | Pendiente |
-
+| RNF-007 | Toda la interfaz del plugin debe estar disponible en inglés (`lang/en`) y en español (`lang/es`), sin claves de texto faltantes en ninguno de los dos idiomas. Verificación: comparar las claves de `lang/en/` y `lang/es/` y comprobar que ambos tengan exactamente las mismas claves (0 faltantes) y que moodle-plugin-ci finalice sin errores. | Internacionalización | Pendiente |
 
 ## Requerimientos de Sistema
 
