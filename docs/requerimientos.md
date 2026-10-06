@@ -754,6 +754,7 @@
 | RF-036 | Contactar al vendedor por la mensajería de Moodle | Alta | Pendiente |
 | RF-038 | Marcar un libro como vendido | Media | Pendiente |
 | RF-039 | Editar o eliminar un anuncio propio | Media | Pendiente |
+| RF-040 | Subir fotos del libro | Media | Pendiente |
 
 #### Criterios de aceptación
 
@@ -817,6 +818,18 @@
 - **Dado** un vendedor autenticado que tiene un anuncio propio publicado en el Marketplace,
 - **Cuando** solicita eliminarlo y confirma la acción,
 - **Entonces** el sistema elimina el anuncio y deja de mostrarlo en el Marketplace.
+
+### RF-040
+
+**Criterio 1**
+- **Dado** que el vendedor está publicando o editando un anuncio,
+  **cuando** selecciona fotos del libro y no supera el máximo de N fotos por anuncio,
+  **entonces** el sistema guarda las fotos y las muestra en el detalle del anuncio.
+
+**Criterio 2**
+- **Dado** que el vendedor ya alcanzó el máximo de N fotos por anuncio,
+  **cuando** intenta subir otra foto,
+  **entonces** el sistema rechaza la foto y muestra un mensaje indicando el límite permitido.
 
 ### Notificaciones
 
