@@ -258,11 +258,25 @@
 
 | ID | Descripción | Prioridad | Estado |
 |---|---|---|---|
+| RF-032 | Publicar un anuncio de libro con título, autor, descripción, precio y fotos | Alta | Pendiente |
 | RF-033 | Vincular un libro a una o más materias | Alta | Pendiente |
 | RF-035 | Buscar libros por título o autor | Media | Pendiente |
 
 #### Criterios de aceptación
 
+### RF-032
+
+*Criterio 1*
+
+- *Dado* un usuario autenticado que desea publicar un libro en el Marketplace,
+- *Cuando* completa el título, autor, descripción, precio y agrega fotos del libro,
+- *Entonces* el sistema permite publicar el anuncio del libro correctamente.
+
+*Criterio 2*
+
+- *Dado* un usuario que está publicando un anuncio de libro en el Marketplace,
+- *Cuando* intenta publicar el anuncio sin completar alguno de los datos obligatorios,
+- *Entonces* el sistema rechaza la publicación y muestra un mensaje indicando la información que falta.
 ### RF-033
 
 *Criterio 1*
