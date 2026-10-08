@@ -22,10 +22,24 @@ git remote add upstream https://github.com/sis-inf/PROYECTO.git
 ```
 
 ### 4. Sincroniza antes de trabajar
+`git fetch upstream` descarga la información más reciente del repositorio original y actualiza las referencias remotas, sin modificar directamente la rama de trabajo.
+
 ```bash
-git checkout dev
-git pull upstream dev
+git fetch upstream
 ```
+
+`git rebase upstream/dev` actualiza la rama de trabajo colocando sus cambios sobre la versión más reciente de la rama `dev` del repositorio original.
+
+```bash
+git rebase upstream/dev
+```
+
+`git push --force-with-lease` actualiza la rama remota después de realizar un `rebase`, evitando sobrescribir cambios remotos que no se hayan recibido previamente.
+
+```bash
+git push --force-with-lease
+```
+
 
 ### 5. Crea tu rama de trabajo
 ```bash
